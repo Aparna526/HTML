@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <style>
+        /* We'll add our CSS here */
+        .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+}
+header {
+    background-color: #276190;
+    padding: 20px;
+    width: 85%;
+    color: white;
+    margin-left: 10%;
+    position: fixed;
+}
+
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;    
+    width: 100%;
+}
+button{
+    margin-left: 1000px;
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+.sidebar {
+    width: 100px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 0%;
+    height: 100%;
+    position: fixed;
+}
+main {
+    flex: 1;
+    padding: 150px;
+    background-color: black;
+    color: white;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.movie-card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 150px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.movie-card h3 {
+    padding: 10px;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.movie-card p {
+    padding: 0 10px 10px;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #276190;
+}
+    </style>
+</head>
+<body>
+    <div class="App">
+        <!-- We'll add our content here -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Movies</li>
+                    <li>TV Shows</li>
+                </ul>
+            </nav>
+        </aside>
+        <header>
+            <div class="header-content">
+                <h2>Movie Website</h2>
+                <button type="button">Login</button>
+            </div>
+           
+        </header>
+        
+        <div class="content-wrapper">
+            <!-- We'll add sidebar and main content here -->
+            
+        </div>
+
+        <main>
+            <div class="movie-grid">
+                <!-- We'll add movie cards here -->
+                <div class="movie-card">
+                    <img src="Kalki.jpg" alt="Movie 1">
+                    <h3>Kalki</h3>
+                    <p>Release Year: 2024</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Salaar1.jpg" alt="Movie 2">
+                    <h3>Salaar</h3>
+                    <p>Release Year: 2023</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Adipurush.jpg" alt="Movie 3">
+                    <h3>Adipurush</h3>
+                    <p>Release Year: 2023</p>
+                </div>
+                <div class="movie-card">
+                    <img src="RadheSyam.jpeg" alt="Movie 4">
+                    <h3>Radhe Syam</h3>
+                    <p>Release Year: 2022</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Saaho.jpg" alt="Movie 5">
+                    <h3>Saaho</h3>
+                    <p>Release Year: 2019</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Bahubali2.jpg" alt="Movie 6">
+                    <h3>Bahubali 2: The Conclusion</h3>
+                    <p>Release Year: 2017</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Bahubali.jpg" alt="Movie 7">
+                    <h3>Bahubali: The Begining</h3>
+                    <p>Release Year: 2015</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Mirchi.jpg" alt="Movie 8">
+                    <h3>Mirchi</h3>
+                    <p>Release Year: 2013</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Rebel.jpg" alt="Movie 9">
+                    <h3>Rebel</h3>
+                    <p>Release Year: 2012</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Mr.Perfect.jpeg" alt="Movie 10">
+                    <h3>Mr.Perfect</h3>
+                    <p>Release Year: 2011</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Darling.jpg" alt="Movie 11">
+                    <h3>Darling</h3>
+                    <p>Release Year: 2010</p>
+                </div>
+                <div class="movie-card">
+                    <img src="EkNiranjan.jpg" alt="Movie 12">
+                    <h3>Ek Niranjan</h3>
+                    <p>Release Year: 2009</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Billa.jpg" alt="Movie 13">
+                    <h3>Billa</h3>
+                    <p>Release Year: 2009</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Bujjigadu.jpg" alt="Movie 14">
+                    <h3>Bujjigadu</h3>
+                    <p>Release Year: 2008</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Munna.jpg" alt="Movie 15">
+                    <h3>Munna</h3>
+                    <p>Release Year: 2007</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Yogi.jpg" alt="Movie 16">
+                    <h3>Yogi</h3>
+                    <p>Release Year: 2007</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Pournami.jpg" alt="Movie 17">
+                    <h3>Pournami</h3>
+                    <p>Release Year: 2006</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Chatrapathi.jpg" alt="Movie 18">
+                    <h3>Chatrapathi</h3>
+                    <p>Release Year: 2005</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Chakram.jpg" alt="Movie 19">
+                    <h3>Chakram</h3>
+                    <p>Release Year: 2005</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Adavi_Ramudu.jpg" alt="Movie 20">
+                    <h3>Adavi Ramudu</h3>
+                    <p>Release Year: 2004</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Varsham.jpg" alt="Movie 21">
+                    <h3>Varsham</h3>
+                    <p>Release Year: 2004</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Raghavendra.jpg" alt="Movie 22">
+                    <h3>Raghavendra</h3>
+                    <p>Release Year: 2003</p>
+                </div>
+                <div class="movie-card">
+                    <img src="Eeshwar.jpg" alt="Movie 23">
+                    <h3>Eeshwar</h3>
+                    <p>Release Year: 2002</p>
+                </div>
+                <!-- Add more movie cards as needed -->
+            </div>
+        </main>
+    </div>
+</body>
+</html>
